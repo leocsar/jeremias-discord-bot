@@ -1,0 +1,26 @@
+{
+  "name": "jeremias-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/core.ts",
+  "scripts": {
+    "dev": "tsc && ts-node src/core.ts development",
+    "start": "node build/server.js production",
+    "build": "rimraf ./build && tsc",
+    "build-and-start": "npm run build && node build/server.js production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Leonardo César",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "dotenv": "^16.0.0",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}
